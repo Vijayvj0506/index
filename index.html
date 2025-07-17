@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Books Introduction</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      background: linear-gradient(to right, #e3f2fd, #fce4ec);
+      color: #333;
+    }
+
+    header {
+      text-align: center;
+      padding: 2rem;
+      background: #3949ab;
+      color: white;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      letter-spacing: 2px;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 30px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .book-card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .book-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    }
+
+    .book-card img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+    }
+
+    .book-content {
+      padding: 15px;
+    }
+
+    .book-content h3 {
+      margin: 0 0 10px;
+      color: #3949ab;
+    }
+
+    .book-content p {
+      font-size: 0.9rem;
+      color: #555;
+      line-height: 1.4;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #3949ab;
+      color: white;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Discover Amazing Books</h1>
+    <p>Dive into the world of knowledge, imagination, and stories</p>
+  </header>
+
+  <div class="container">
+    <div class="book-card">
+      <img src="https://images.unsplash.com/photo-1529651737248-dad5e4fb0408" alt="Book 1">
+      <div class="book-content">
+        <h3>The Art of Thinking Clearly</h3>
+        <p>A fascinating book that helps you recognize cognitive biases and make better decisions in everyday life.</p>
+      </div>
+    </div>
+
+    <div class="book-card">
+      <img src="https://images.unsplash.com/photo-1529651668578-6b9f9a69f0a0" alt="Book 2">
+      <div class="book-content">
+        <h3>Atomic Habits</h3>
+        <p>Learn how small daily habits compound into life-changing results. A must-read for self-improvement lovers.</p>
+      </div>
+    </div>
+
+    <div class="book-card">
+      <img src="https://images.unsplash.com/photo-1528207776546-365bb710ee93" alt="Book 3">
+      <div class="book-content">
+        <h3>The Silent Patient</h3>
+        <p>A psychological thriller about a woman who stops speaking after a shocking incident, and a therapist obsessed with uncovering her secret.</p>
+      </div>
+    </div>
+
+    <div class="book-card">
+      <img src="https://images.unsplash.com/photo-1495446815901-a7297e633e8d" alt="Book 4">
+      <div class="book-content">
+        <h3>Deep Work</h3>
+        <p>A guide to cultivating focus in a distracted world, helping you achieve high levels of productivity and mastery.</p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Book Lovers Hub | All Rights Reserved
+  </footer>
+
+</body>
+</html>
